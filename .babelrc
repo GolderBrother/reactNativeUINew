@@ -1,0 +1,21 @@
+// .babelrc or babel-loader option
+// babel-plugin-import 会帮助你加载 JS 和 CSS
+{
+  "plugins": [
+    // ["import", {
+    //   "libraryName": "antd-mobile"
+      // Unable to resolve module `./index.css` from `e:\wamp\www\web\zksecurity\zkbiosecurity-app-react-native\react-native-demo\reactNativeUi\node_modules\antd-mobile\lib\list\style\css.js
+      // "style": "css"
+      // `style: true` 会加载 less 文件
+    // }], 
+    ["module-resolver", {
+      "alias": {
+        "@": "./app",
+        "@assets": "./assets",
+        "@demos": "./app/demos",
+        "@screens": "./app/screens",
+        "@components": "./app/components"
+      }
+    }]
+  ]
+}

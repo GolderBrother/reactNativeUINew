@@ -1,0 +1,3 @@
+export const GET_USER_INFO = "GET_USER_INFO"
+export const SET_USER_INFO = "SET_USER_INFO"
+export const CLEAR_USER_STORE = "CLEAR_USER_STORE"
